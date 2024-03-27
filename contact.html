@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .big {
+        border: 2px solid #afafaf;
+        border-radius: 8px;
+        padding: 16px 64px 16px 32px;
+        width: 400px;
+      }
+      .input {
+        margin-bottom: 16px;
+      }
+      input {
+        width: 350px;
+      }
+      textarea {
+        width: 350px;
+        height: 200px;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <hr />
+    <div>
+      <ul class="navbar">
+        <li><a href="./index.html">Home</a> |</li>
+        <li><a href="./education.html">Education</a> |</li>
+        <li><a href="./work.html">Work Experience</a> |</li>
+        <li><a href="#">Contact Me</a> |</li>
+      </ul>
+    </div>
+    <hr />
+    <h1>Contact Me</h1>
+    <div class="big">
+      <div class="inside">
+        <div class="input"><p>Enter your info..</p></div>
+        <div class="input">
+          <label for="fname">Your name:</label><br />
+          <input type="text" id="fname" name="fname" />
+        </div>
+        <div class="input">
+          <label for="email">Your E-mail:</label><br />
+          <input type="text" id="email" name="fname" />
+        </div>
+        <div class="input">
+          <label for="genders">Genders</label> <br />
+          <select name="genders" id="genders" style="width:350px">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+        <div class="input">
+          <button>Send</button>
+          <button>Clear</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
